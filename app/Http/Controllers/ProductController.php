@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Models\Product;
 use Illuminate\Http\RedirectResponse;
+
+// This controller handles product management functionality
 class ProductController extends Controller
 {
    public function index(Request $request): View
@@ -22,9 +24,9 @@ class ProductController extends Controller
                 return $query->where('category', $categoryFilter);
             })
             ->paginate(10)
-            ->withQueryString(); // penting biar query tetap ada di pagination link
+            ->withQueryString(); 
 
-        // Ambil daftar kategori unik dari data produk
+        
         $categories = Product::select('category')->distinct()->pluck('category');
 
         return view('product.index', compact('products', 'search', 'categoryFilter', 'categories'));

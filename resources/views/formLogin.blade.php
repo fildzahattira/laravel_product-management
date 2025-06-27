@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/logins/login-5/assets/css/login-5.css">
 </head>
 <body>
-    <!-- Login 5 - Bootstrap Brain Component -->
+<!-- Login 5 - Bootstrap Brain Component -->
 <section class="p-3 p-md-4 p-xl-5">
   <div class="container">
     <div class="card border-light-subtle shadow-sm">

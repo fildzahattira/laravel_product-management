@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Models\Product;
 
+// This file defines the web routes for the application
 Route::get('/', [LoginController::class, 'showLoginForm'])->name('login.form');
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login.form');

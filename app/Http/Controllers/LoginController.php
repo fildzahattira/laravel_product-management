@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
-
+// This controller handles user login and logout functionality
 class LoginController extends Controller
 {
     public function login(Request $request)
@@ -27,7 +27,7 @@ class LoginController extends Controller
 
     public function showLoginForm()
 {
-    return view('formLogin'); // Sesuaikan dengan nama file blade kamu
+    return view('formLogin'); 
 }
 
 public function logout(Request $request)
